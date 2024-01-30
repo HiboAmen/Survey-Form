@@ -22,7 +22,7 @@ const SurveyQuestion = () => { const { control, handleSubmit, setValue, watch,} 
   const [reviewMode, setReviewMode] = useState(false);
   const [surveyConfig, setSurveyConfig] = useState({});
   const [selectedOption, setSelectedOption] = useState(null);
-  const [saveButtonClicked, setSaveButtonClicked] = useState(false);  // Add this line
+  const [saveButtonClicked, setSaveButtonClicked] = useState(false);
 
 
   const currentQuestionIndex = watch("currentQuestionIndex");
@@ -144,17 +144,10 @@ const SurveyQuestion = () => { const { control, handleSubmit, setValue, watch,} 
   };
 
   const handleSave = () => {
-    // Save logic here
-    // For now, let's just log the questions to the console
-    console.log("Saved Questions:", fields);
-    // You can add more logic here to persist the questions or perform other actions.
-
-    // Disable user-adjustable components
     setReviewVisible(true);
-    // Disable editing questions
     setReviewMode(true);
-    // Hide Save button
     setSaveButtonClicked(true);
+    console.log("Saved Questions:", fields);
   };
 
   const renderCheckboxOptions = (question, questionIndex) => {
