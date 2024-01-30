@@ -208,7 +208,7 @@ const SurveyQuestion = () => { const { control, handleSubmit, setValue, watch,} 
                 {watch("header", "ESG Questions")}
               </h1>
               <Select
-                className={`select-container ${reviewVisible ? 'user-adjustable' : 'hidden'}`}
+                className={`select-container ${reviewVisible ? 'user-adjustable' : 'disable'}`}
                 options={component.questions.map((questionConfig) => ({
                   label: questionConfig.header,
                   value: questionConfig,

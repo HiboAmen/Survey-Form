@@ -137,6 +137,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   transition: border-color 0.3s ease-in-out;
+  margin-right: 10px;
 
   &:focus {
     border-color: #007bff;
@@ -231,6 +232,10 @@
   margin-left: 10px;
 }
 .user-adjustable {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 .save-button{
