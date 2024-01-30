@@ -1,0 +1,244 @@
+.survey-form {
+  display: flex; /* Set the container as a flex container */
+  flex-direction: column; /* Adjust the flex direction to suit your layout */
+  align-items:normal; /* Center the content horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
+   /* Add padding for left and right edges */
+}
+
+
+.create_button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: green;
+  color: white;
+}
+
+.select-container{
+  margin-bottom: 10px;
+}
+.question-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.question-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgba(224, 224, 224, 0.1);
+  display: flex;
+  margin: 10px 0;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: 10px 10px 10px rgb(194, 190, 190);
+  margin-bottom: 30px;
+}
+
+.question-container.hidden {
+  opacity: 1;
+}
+
+.question-header,
+.question-subheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 8px;
+  height: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.question-header {
+  background-color: #f58a06;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
+}
+
+.question-subheader {
+  background-color: #093de8;
+}
+
+.AddQuestion {
+  margin-left: 100px;
+}
+
+.delete-question-btn {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
+.checkbox-options {
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+  width:100%;
+}
+
+.option-row input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #555;
+  border-radius: 0%;
+  margin-right: 5px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.option-row input[type="radio"]:checked::before {
+  content: '\2714'; /* Unicode character for a checkmark */
+  color: green;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.option-row label {
+  margin-right: 10px;
+  position: relative;
+}
+
+.option-row input[type="text"] {
+  width:80%;
+  flex: 1; /* Use flex property to allow the input to take remaining space */
+  padding: 8px;
+  border: 2px solid #ced5d0; /* Adjust the border style */
+  transition: border-color 0.3s ease-in-out;
+ margin-bottom: 10px;
+ margin-right: 10px;
+  &:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+}
+
+.text-input,
+.textarea-input,
+.file-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+
+  &:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
+.custom-file-upload {
+  background-color: rgb(231, 200, 22);
+  color: rgb(20, 20, 20);
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.upload-container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transparent-box {
+  background-color: #e7e5e5;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  zoom: 0.9;
+  margin-left: 150px;
+  border: 3px solid blue;
+  width: 800px;
+}
+
+.file-input {
+  display: inline-block;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.yes-no-options label {
+  margin-right: 10px;
+}
+
+.file-upload {
+  margin-top: 10px;
+}
+
+.review-section {
+  margin-top: 20px;
+}
+
+.review-section h3 {
+  margin-bottom: 10px;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.submit-btn,
+.previous,
+.next,
+.review-button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.next {
+  background-color: #28a745;
+}
+
+.remove-button {
+  margin-left: 10px;
+}
+.user-adjustable {
+  display: none;
+}
+.save-button{
+  margin-bottom: 10px;
+  background-color: #28a745;
+  width: 10%;
+  height: 10%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-size: large;
+}

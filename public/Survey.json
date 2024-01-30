@@ -1,0 +1,72 @@
+{
+  "surveyBackgroundColor": "#f0f0f0",
+  "selectedComponentIndex": 0,
+  "components": [
+    {
+      "type": "header",
+      "backgroundColor": "#fff",
+      "text": "Untitled Form",
+      "textColor": "#000",
+      "width": 200,
+      "height": 50,
+      "x": 50,
+      "y": 50
+    },
+    {
+      "type": "questions",
+      "backgroundColor": "#fff",
+      "header": "Questions",
+      "textColor": "#000",
+      "commonStyles": {
+        "width": 200,
+        "height": 30
+      },
+      "questions": [
+        {
+          "id": 1,
+          "header": "Single Answer Question",
+          "subheader": "Add text if you need",
+          "type": "text"
+        },
+        {
+          "id": 2,
+          "header": "Multistep Question",
+          "subheader": "Optional subheader",
+          "type": "multistep",
+          "steps": [
+            {
+              "stepType": "selectOptions",
+              "options": ["Step 1 Option 1", "Step 1 Option 2", "Step 1 Option 3"]
+            },
+            {
+              "stepType": "textInput",
+              "question": "Step 2: Provide additional comments:"
+            },
+            {
+              "stepType": "upload",
+              "question": "Step 3: Attach a file:"
+            },
+            {
+              "stepType": "review",
+              "question": "Review your answers"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "header": "File Upload Question",
+          "subheader": "Optional subheader",
+          "type": "upload"
+        },
+        {
+          "id": 4,
+          "header": "Option Selecting Question",
+          "subheader": "Here you can write a better ",
+          "type": "selectOptions",
+          "options": ["Update here ", " update me", "adjust me"]
+          
+        }
+      ]
+    }
+  ]
+}

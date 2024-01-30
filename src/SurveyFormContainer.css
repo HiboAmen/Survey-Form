@@ -1,0 +1,80 @@
+/* SurveyFormContainer.css */
+
+/* Overall styling for the survey form container */
+.survey-form-container {
+  background-color: #ffffff; /* Set background color to white */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(252, 11, 11, 0.1);
+}
+
+/* Styling for the color buttons section */
+.color-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.color-buttons label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the resize handle */
+.resize-handle {
+  background-color: #007bff;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+/* Styling for the options panel */
+.options-panel {
+  margin-bottom: 20px;
+}
+
+.options-panel select {
+  padding: 5px;
+}
+
+/* Styling for buttons in the survey form container */
+.survey-form-container button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Save Changes button is blue */
+.survey-form-container button.save-changes {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Download button is green */
+.survey-form-container button.download {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+/* Remove button is red */
+.survey-form-container button.remove {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+/* Add Question button is green */
+.survey-form-container button.add-question {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+
